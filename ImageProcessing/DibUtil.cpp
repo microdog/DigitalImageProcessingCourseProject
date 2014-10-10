@@ -14,6 +14,14 @@ static char THIS_FILE[]=__FILE__;
 // gray = red * 0.299 + green * 0.587 + blue * 0.114
 #define GRAYING(R, G, B) (BYTE)(((UINT)B * 29 + (UINT)G * 150 + (UINT)R * 77 + 128) >> 8)
 
+inline RGBQUAD RGBSUB(RGBQUAD A, RGBQUAD B) {
+	RGBQUAD S;
+	S.rgbBlue = A.rgbBlue - B.rgbBlue;
+	S.rgbGreen = A.rgbGreen - B.rgbGreen;
+	S.rgbRed = A.rgbRed - B.rgbRed;
+	return S;
+}
+
 //////////////////////////////////////////////////////////////////////
 // Construction/Destruction
 //////////////////////////////////////////////////////////////////////
@@ -92,4 +100,11 @@ VOID CDibUtil::Binaryzation(CDib& src, CDib& dest, BYTE threshold)
 VOID CDibUtil::Subtract(CDib& imgA, CDib& imgB, CDib& dest)
 {
 	// TODO: The equality of two images' size should be validated
+	CSize imageSize = imgA.GetDimensions();
+
+	for (long y = 0; y != imageSize.cy; ++y)
+		for (long x = 0; x != imageSize.cx; ++x)
+		{
+			dest.WritePixel(x, y, RGBSUB(imgA.GetPixel(x, y), imgB.GetPixel(x, y)));
+		}
 }
