@@ -11,6 +11,8 @@
 
 #include "ImageProcessingViewA.h"
 #include "ImageProcessingViewB.h"
+#include "ImageProcessingViewC.h"
+#include "ImageProcessingViewD.h"
 
 class CMainFrame : public CFrameWnd
 {

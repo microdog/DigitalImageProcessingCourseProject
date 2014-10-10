@@ -2,13 +2,13 @@
 
 [General Info]
 Version=1
-LastClass=CImageProcessingViewB
+LastClass=CImageProcessingViewD
 LastTemplate=CView
 NewFileInclude1=#include "stdafx.h"
 NewFileInclude2=#include "ImageProcessing.h"
 LastPage=0
 
-ClassCount=6
+ClassCount=8
 Class1=CImageProcessingApp
 Class2=CImageProcessingDoc
 Class3=CImageProcessingViewA
@@ -18,6 +18,8 @@ ResourceCount=2
 Resource1=IDR_MAINFRAME
 Class5=CAboutDlg
 Class6=CImageProcessingViewB
+Class7=CImageProcessingViewC
+Class8=CImageProcessingViewD
 Resource2=IDD_ABOUTBOX
 
 [CLS:CImageProcessingApp]
@@ -123,6 +125,20 @@ CommandCount=8
 Type=0
 HeaderFile=ImageProcessingViewB.h
 ImplementationFile=ImageProcessingViewB.cpp
+BaseClass=CView
+Filter=C
+
+[CLS:CImageProcessingViewC]
+Type=0
+HeaderFile=ImageProcessingViewC.h
+ImplementationFile=ImageProcessingViewC.cpp
+BaseClass=CView
+Filter=C
+
+[CLS:CImageProcessingViewD]
+Type=0
+HeaderFile=ImageProcessingViewD.h
+ImplementationFile=ImageProcessingViewD.cpp
 BaseClass=CView
 Filter=C
 

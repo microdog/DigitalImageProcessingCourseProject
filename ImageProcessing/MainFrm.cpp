@@ -108,7 +108,7 @@ void CMainFrame::Dump(CDumpContext& dc) const
 
 BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext) 
 {
-	if (!m_wndSplitter.CreateStatic(this, 1, 2))
+	if (!m_wndSplitter.CreateStatic(this, 2, 2))
 	{
 		return FALSE;
 	}
@@ -117,11 +117,13 @@ BOOL CMainFrame::OnCreateClient(LPCREATESTRUCT lpcs, CCreateContext* pContext)
 	GetClientRect(&clientRect);
 
 	LONG width = (clientRect.right - clientRect.left) / 2;
-	LONG height = (clientRect.bottom - clientRect.top);
+	LONG height = (clientRect.bottom - clientRect.top) / 2;
 	CSize viewSize(width, height);
 
 	m_wndSplitter.CreateView(0, 0, RUNTIME_CLASS(CImageProcessingViewA), viewSize, pContext);
 	m_wndSplitter.CreateView(0, 1, RUNTIME_CLASS(CImageProcessingViewB), viewSize, pContext);
+	m_wndSplitter.CreateView(1, 0, RUNTIME_CLASS(CImageProcessingViewC), viewSize, pContext);
+	m_wndSplitter.CreateView(1, 1, RUNTIME_CLASS(CImageProcessingViewD), viewSize, pContext);
 
 	return TRUE;
 }
