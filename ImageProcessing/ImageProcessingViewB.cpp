@@ -36,8 +36,19 @@ END_MESSAGE_MAP()
 
 void CImageProcessingViewB::OnDraw(CDC* pDC)
 {
-	CDocument* pDoc = GetDocument();
-	// TODO: add draw code here
+	CImageProcessingDoc* pDoc = GetDocument();
+	ASSERT_VALID(pDoc);
+	
+	// Draw image
+	pDoc->m_BitmapB.Draw(pDC, CPoint(0, 0), pDoc->m_BitmapB.GetDimensions());
+	
+	// Draw view id
+	RECT rect;
+	GetClientRect(&rect);
+	rect.top = rect.bottom - 20;
+	rect.right = rect.left + 60;
+	pDC->SetBkMode(TRANSPARENT);
+	pDC->DrawText(TEXT("View B"), &rect, DT_CENTER);
 }
 
 /////////////////////////////////////////////////////////////////////////////

@@ -57,7 +57,17 @@ void CImageProcessingViewA::OnDraw(CDC* pDC)
 {
 	CImageProcessingDoc* pDoc = GetDocument();
 	ASSERT_VALID(pDoc);
-	// TODO: add draw code for native data here
+	
+	// Draw image
+	pDoc->m_BitmapA.Draw(pDC, CPoint(0, 0), pDoc->m_BitmapA.GetDimensions());
+
+	// Draw view id
+	RECT rect;
+	GetClientRect(&rect);
+	rect.top = rect.bottom - 20;
+	rect.left = rect.right - 60;
+	pDC->SetBkMode(TRANSPARENT);
+	pDC->DrawText(TEXT("View A"), &rect, DT_CENTER);
 }
 
 /////////////////////////////////////////////////////////////////////////////
