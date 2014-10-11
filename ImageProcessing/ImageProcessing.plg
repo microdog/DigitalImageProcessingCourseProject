@@ -6,13 +6,15 @@
 --------------------Configuration: ImageProcessing - Win32 Release--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP3EA.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Release/ImageProcessing.res" /d "NDEBUG" /d "_AFXDLL" "C:\git\ImageProcessing\ImageProcessing\ImageProcessing.rc"" 
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP405.tmp" with contents
 [
 /nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ImageProcessing.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\git\ImageProcessing\ImageProcessing\DibUtil.cpp"
 "C:\git\ImageProcessing\ImageProcessing\ImageProcessingDoc.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP3EA.tmp" 
-Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP3EB.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP405.tmp" 
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP406.tmp" with contents
 [
 /nologo /subsystem:windows /incremental:no /pdb:"Release/ImageProcessing.pdb" /machine:I386 /out:"Release/ImageProcessing.exe" 
 .\Release\CDib.obj
@@ -27,10 +29,13 @@ Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP3EB.tmp" with con
 .\Release\StdAfx.obj
 .\Release\ImageProcessing.res
 ]
-Creating command line "link.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP3EB.tmp"
+Creating command line "link.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP406.tmp"
 <h3>Output Window</h3>
+Compiling resources...
 Compiling...
+DibUtil.cpp
 ImageProcessingDoc.cpp
+Generating Code...
 Linking...
 
 

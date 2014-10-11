@@ -365,7 +365,7 @@ END
 STRINGTABLE DISCARDABLE 
 BEGIN
     AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
-    IDS_HELP_TEXT           "“数字图像处理”课程项目\r\n指导老师：全红艳\r\n学生：朱凯男\r\n学号：10122510250\r\n\r\n\r\n使用说明：\r\n1、使用工具栏加载对应图像。\r\n2、在“操作”菜单中执行相关操作。操作名称括号内四个字母分别代表四个View的角色（I-输入，O-输出，N-不使用）。\r\n3、显示操作结果后使用工具栏保存对应图像。"
+    IDS_HELP_TEXT           "“数字图像处理”课程项目\r\n指导老师：全红艳\r\n学生：朱凯男\r\n学号：10122510250\r\nhttps://github.com/microdog/DigitalImageProcessingCourseProject\r\n\r\n\r\n使用说明：\r\n1、使用工具栏加载对应图像。\r\n2、在“操作”菜单中执行相关操作。操作名称括号内四个字母分别代表四个View的角色（I-输入，O-输出，N-不使用）。\r\n3、显示操作结果后使用工具栏保存对应图像。"
     IDS_INVALID_INPUT       "输入图像不符合要求！"
 END
 
