@@ -100,7 +100,7 @@ void CImageProcessingDoc::Dump(CDumpContext& dc) const
 
 void CImageProcessingDoc::LoadImage(CDib& bmp)
 {
-	CFileDialog fileDlg(TRUE, _T("*.bmp"), "",OFN_FILEMUSTEXIST|OFN_PATHMUSTEXIST|OFN_HIDEREADONLY,"image files (*.bmp; *.jpg) |*.bmp|",NULL);
+	CFileDialog fileDlg(TRUE, _T("*.bmp"), "",OFN_FILEMUSTEXIST|OFN_PATHMUSTEXIST|OFN_HIDEREADONLY,"Image files (*.bmp) |*.bmp|",NULL);
 	char title[] = {"Open Image"};
 	fileDlg.m_ofn.lpstrTitle = title;
 	
@@ -118,8 +118,8 @@ void CImageProcessingDoc::LoadImage(CDib& bmp)
 
 void CImageProcessingDoc::SaveImage(CDib& bmp)
 {
-	CFileDialog fileDlg(FALSE, _T("*.bmp"), "",OFN_FILEMUSTEXIST|OFN_PATHMUSTEXIST|OFN_HIDEREADONLY,"image files (*.bmp) |*.bmp|",NULL);
-	char title[]= {"Open Image"};
+	CFileDialog fileDlg(FALSE, _T("*.bmp"), "",OFN_FILEMUSTEXIST|OFN_PATHMUSTEXIST|OFN_HIDEREADONLY,"Image files (*.bmp) |*.bmp|",NULL);
+	char title[]= {"Save Image"};
 	fileDlg.m_ofn.lpstrTitle= title;
 	
 	CFile file;

@@ -48,6 +48,11 @@ protected:
 	DECLARE_MESSAGE_MAP()
 };
 
+#ifndef _DEBUG  // debug version in ImageProcessingViewA.cpp
+inline CImageProcessingDoc* CImageProcessingViewB::GetDocument()
+{ return (CImageProcessingDoc*)m_pDocument; }
+#endif
+
 /////////////////////////////////////////////////////////////////////////////
 
 //{{AFX_INSERT_LOCATION}}

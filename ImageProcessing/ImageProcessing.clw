@@ -15,12 +15,12 @@ Class3=CImageProcessingViewA
 Class4=CMainFrame
 
 ResourceCount=2
-Resource1=IDD_ABOUTBOX
+Resource1=IDR_MAINFRAME
 Class5=CAboutDlg
 Class6=CImageProcessingViewB
 Class7=CImageProcessingViewC
 Class8=CImageProcessingViewD
-Resource2=IDR_MAINFRAME
+Resource2=IDD_ABOUTBOX
 
 [CLS:CImageProcessingApp]
 Type=0
