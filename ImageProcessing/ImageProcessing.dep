@@ -1,0 +1,85 @@
+# Microsoft Developer Studio Generated Dependency File, included by ImageProcessing.mak
+
+.\CDib.cpp : \
+	".\CDib.h"\
+	
+
+.\DibUtil.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	
+
+.\ImageProcessing.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewA.h"\
+	".\ImageProcessingViewB.h"\
+	".\ImageProcessingViewC.h"\
+	".\ImageProcessingViewD.h"\
+	".\MainFrm.h"\
+	
+
+.\ImageProcessing.rc : \
+	".\res\ImageProcessing.ico"\
+	".\res\ImageProcessing.rc2"\
+	".\res\ImageProcessingDoc.ico"\
+	".\res\Toolbar.bmp"\
+	
+
+.\ImageProcessingDoc.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	
+
+.\ImageProcessingViewA.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewA.h"\
+	
+
+.\ImageProcessingViewB.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewB.h"\
+	
+
+.\ImageProcessingViewC.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewC.h"\
+	
+
+.\ImageProcessingViewD.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewD.h"\
+	
+
+.\MainFrm.cpp : \
+	".\CDib.h"\
+	".\DibUtil.h"\
+	".\ImageProcessing.h"\
+	".\ImageProcessingDoc.h"\
+	".\ImageProcessingViewA.h"\
+	".\ImageProcessingViewB.h"\
+	".\ImageProcessingViewC.h"\
+	".\ImageProcessingViewD.h"\
+	".\MainFrm.h"\
+	
+
+.\StdAfx.cpp : \
+	"..\..\..\program files\microsoft visual studio\vc98\include\basetsd.h"\
+	".\StdAfx.h"\
+	
