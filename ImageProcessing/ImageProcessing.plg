@@ -3,40 +3,78 @@
 <pre>
 <h1>Build Log</h1>
 <h3>
---------------------Configuration: ImageProcessing - Win32 Release--------------------
+--------------------Configuration: ImageProcessing - Win32 Debug--------------------
 </h3>
 <h3>Command Lines</h3>
-Creating command line "rc.exe /l 0x804 /fo"Release/ImageProcessing.res" /d "NDEBUG" /d "_AFXDLL" "C:\git\ImageProcessing\ImageProcessing\ImageProcessing.rc"" 
-Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP405.tmp" with contents
+Creating command line "rc.exe /l 0x804 /fo"Debug/ImageProcessing.res" /d "_DEBUG" /d "_AFXDLL" "C:\git\ImageProcessing\ImageProcessing\ImageProcessing.rc"" 
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP61.tmp" with contents
 [
-/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/ImageProcessing.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/ImageProcessing.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\git\ImageProcessing\ImageProcessing\CDib.cpp"
 "C:\git\ImageProcessing\ImageProcessing\DibUtil.cpp"
+"C:\git\ImageProcessing\ImageProcessing\ImageProcessing.cpp"
 "C:\git\ImageProcessing\ImageProcessing\ImageProcessingDoc.cpp"
+"C:\git\ImageProcessing\ImageProcessing\ImageProcessingViewA.cpp"
+"C:\git\ImageProcessing\ImageProcessing\ImageProcessingViewB.cpp"
+"C:\git\ImageProcessing\ImageProcessing\ImageProcessingViewC.cpp"
+"C:\git\ImageProcessing\ImageProcessing\ImageProcessingViewD.cpp"
+"C:\git\ImageProcessing\ImageProcessing\MainFrm.cpp"
 ]
-Creating command line "cl.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP405.tmp" 
-Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP406.tmp" with contents
+Creating command line "cl.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP61.tmp" 
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP62.tmp" with contents
 [
-/nologo /subsystem:windows /incremental:no /pdb:"Release/ImageProcessing.pdb" /machine:I386 /out:"Release/ImageProcessing.exe" 
-.\Release\CDib.obj
-.\Release\DibUtil.obj
-.\Release\ImageProcessing.obj
-.\Release\ImageProcessingDoc.obj
-.\Release\ImageProcessingViewA.obj
-.\Release\ImageProcessingViewB.obj
-.\Release\ImageProcessingViewC.obj
-.\Release\ImageProcessingViewD.obj
-.\Release\MainFrm.obj
-.\Release\StdAfx.obj
-.\Release\ImageProcessing.res
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/ImageProcessing.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\git\ImageProcessing\ImageProcessing\StdAfx.cpp"
 ]
-Creating command line "link.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP406.tmp"
+Creating command line "cl.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP62.tmp" 
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP63.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/ImageProcessing.pdb" /debug /machine:I386 /out:"Debug/ImageProcessing.exe" /pdbtype:sept 
+.\Debug\CDib.obj
+.\Debug\DibUtil.obj
+.\Debug\ImageProcessing.obj
+.\Debug\ImageProcessingDoc.obj
+.\Debug\ImageProcessingViewA.obj
+.\Debug\ImageProcessingViewB.obj
+.\Debug\ImageProcessingViewC.obj
+.\Debug\ImageProcessingViewD.obj
+.\Debug\MainFrm.obj
+.\Debug\StdAfx.obj
+.\Debug\ImageProcessing.res
+]
+Creating command line "link.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP63.tmp"
 <h3>Output Window</h3>
 Compiling resources...
 Compiling...
+StdAfx.cpp
+Compiling...
+CDib.cpp
 DibUtil.cpp
+ImageProcessing.cpp
 ImageProcessingDoc.cpp
+ImageProcessingViewA.cpp
+ImageProcessingViewB.cpp
+ImageProcessingViewC.cpp
+ImageProcessingViewD.cpp
+MainFrm.cpp
 Generating Code...
 Linking...
+Creating temporary file "C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP65.tmp" with contents
+[
+/nologo /o"Debug/ImageProcessing.bsc" 
+.\Debug\StdAfx.sbr
+.\Debug\CDib.sbr
+.\Debug\DibUtil.sbr
+.\Debug\ImageProcessing.sbr
+.\Debug\ImageProcessingDoc.sbr
+.\Debug\ImageProcessingViewA.sbr
+.\Debug\ImageProcessingViewB.sbr
+.\Debug\ImageProcessingViewC.sbr
+.\Debug\ImageProcessingViewD.sbr
+.\Debug\MainFrm.sbr]
+Creating command line "bscmake.exe @C:\DOCUME~1\Microdog\LOCALS~1\Temp\RSP65.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
 
 
 

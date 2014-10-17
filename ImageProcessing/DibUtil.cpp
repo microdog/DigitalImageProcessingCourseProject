@@ -19,12 +19,10 @@ static char THIS_FILE[]=__FILE__;
 
 inline RGBQUAD RGBSUB(RGBQUAD A, RGBQUAD B) {
 	RGBQUAD S;
-	S.rgbBlue = A.rgbBlue - B.rgbBlue;
-	S.rgbGreen = A.rgbGreen - B.rgbGreen;
-	S.rgbRed = A.rgbRed - B.rgbRed;
-	if (S.rgbBlue < 0) S.rgbBlue = 0;
-	if (S.rgbGreen < 0) S.rgbGreen = 0;
-	if (S.rgbRed < 0) S.rgbRed = 0;
+	SHORT tmp;
+	S.rgbBlue = (tmp = A.rgbBlue - B.rgbBlue) < 0 ? 0 : tmp;
+	S.rgbGreen = (tmp = A.rgbGreen - B.rgbGreen) < 0 ? 0 : tmp;
+	S.rgbRed = (tmp = A.rgbRed - B.rgbRed) < 0 ? 0 : tmp;
 	return S;
 }
 
